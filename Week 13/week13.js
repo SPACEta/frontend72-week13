@@ -65,37 +65,51 @@ console.log(dayWord);
 
 //Задание 12
 // Создайте переменную futureYear и присвойте ей значение текущего года плюс 5. Значение выведите в консоль.
-
+let futureYear = currentDate.getFullYear() +5;
+console.log(futureYear);
 
 //Задание 13
 // Создайте переменную futureDateInFutureYear и присвойте ей дату вашего дня рождения в будущем году (futureYear). Значение выведите в консоль.
-
+let futureDateInFutureYear = new Date(2024, 2, 25);
+console.log(futureDateInFutureYear);
 
 //Задание 14
 // Выведите в консоль разницу в годах между futureYear и текущим годом
-
+let diffYears = futureYear - currentYear;
+console.log(diffYears);
 
 //Задание 15
 // Используя метод Date.parse(), создайте новый объект date и преобразуйте переменную strDate в дату.
 // Выведите объект date в консоль.
 const strDate = '2023-06-15T08:30:00.000Z';
-
+const dateParse = new Date(Date.parse(strDate));
+console.log(dateParse);
 
 //Задание 16
 // Используя метод Date.parse(), получите таймстамп (количество миллисекунд) из переменной strDate.
 // Выведите таймстамп в консоль.
-
+const dateParseTime = Date.parse(strDate);
+console.log(dateParseTime);
 
 //Задание 17
 // Используя метод Date.parse(), попытайтесь преобразовать переменную wrongDate в дату. Добавьте условие, если результат преобразования является NaN, выведите в консоль сообщение 'Неправильный формат даты', в другом случае, выведите сообщение 'Правильный формат даты'.
 // Подсказка: используйте условие if...else
 const date = '2023/06/15';
-
+let wrongDate = Date.parse(date);
+if(wrongDate = NaN){ 
+	console.log("Неправильный формат даты");
+} else {
+	console.log("Правильный формат даты");
+}
 
 //Задание 18
 // Используя цикл if...else, проверьте является ли переменная number положительным. Результат выведите в консоль.
 const number = 231;
-
+if(number > 0){ 
+	console.log("Положительная переменная");
+} else {
+	console.log("Отрицательная переменная");
+}
 
 //Задание 19
 // Используя цикл if...else, проверьте является ли переменная number чётным числом. Результат выведите в консоль.
