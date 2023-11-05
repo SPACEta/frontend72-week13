@@ -180,7 +180,35 @@ if(number >= 100 && number < 1000){
 
 //Задание 27
 // Используя switch case, напишите программу, которая принимает на вход целое число от 1 до 7 и выводит в консоль название соответствующего дня недели (например, 1 - "Понедельник", 2 - "Вторник" и т.д.).
+let day = '';
 
+switch(new Date().getDay()) {
+	case 0:
+		day = 'Воскресенье';
+		break;
+	case 1:
+		day = 'Понедельник';
+		break;
+	case 2:
+		day = 'Вторник';
+		break;
+	case 3:
+		day = 'Среда';
+		break;
+	case 4:
+		day = 'Четверг';
+		break;
+	case 5:
+		day = 'Пятница';
+		break;
+	case 6:
+		day = 'Суббота';
+		break;
+	default:
+		day = 'Неизвестный день недели';
+}
+
+console.log(day);
 
 //Задание 28
 // Используя цикл switch case, напишите программу, которая принимает на вход символ направления (N, S, E, W) и выводит в консоль полное название этого направления (N - "Север", S - "Юг", E - "Восток", W - "Запад").
@@ -188,5 +216,21 @@ let direction = 'W';
 let fullName;
 
 switch (direction) {
+	case 'N':
+		fullName = 'Север';
+		break;
+	case 'S':
+		fullName = 'Юг';
+		break;
+	case 'E':
+		fullName = 'Восток';
+		break;
+	case 'W':
+		fullName = 'Запад';
+		break;
+	default:
+		fullName = 'Неизвестное направление';
 }
+
+console.log(fullName);
 
