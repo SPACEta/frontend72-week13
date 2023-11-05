@@ -1,14 +1,12 @@
 //Находим необходимые элементы DOM и записываем в переменные
-const weightInput = document.getElementById('taskInputWeight');
-const heightInput = document.getElementById('taskInputHeight');
-const btn = document.getElementById('btn');
+const birthday = document.getElementById('birthday');
+const btnBirthday = document.getElementById('btnBirthday');
 const result = document.getElementById('result');
 
 //1. Напишите функцию с именем `calculateBMI`, которая принимает два числовых параметра: вес в килограммах и рост в метрах.
 function calculateBMI() {
     //Получаем значение, введенное в поле ввода
-    const weight = weightInput.value;
-    const height = heightInput.value;
+    const birthdayValue = birthday.value;
 
     //2. Внутри функции выполните следующие шаги:
     // -возведите рост в квадрат, используя метод `Math.pow(a, b)`.
