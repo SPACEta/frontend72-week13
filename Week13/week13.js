@@ -234,3 +234,15 @@ switch (direction) {
 
 console.log(fullName);
 
+
+let date1 = new Date(2021, 0, 24, 22, 51); 
+console.log(date1)
+
+let d = new Date(); 
+let y =  d.getFullYear();
+console.log(y);
+
+
+let y1 = new Date(); 
+let d1 = y1.getDate();
+console.log(d1);

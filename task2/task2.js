@@ -3,15 +3,14 @@ const imputBirthday = document.getElementById('imputBirthday');
 const btnBirthday = document.getElementById('btnBirthday');
 const result = document.getElementById('result');
 const errorResult = document.getElementById('errorResult');
-let currentDate = new Date();
+const currentDate = new Date();
 
 function daysBeforBirthday() {
-    let birthday = new Date(Date.parse(imputBirthday.value));
-
-    if(birthday.value == '') {
+    if(imputBirthday.value == '') {
         errorResult.textContent = 'Введите дату своего рождения';
     } else {
-        const timeDiff = birthday - currentDate;
+        let birthday = new Date(Date.parse(imputBirthday.value));
+        let timeDiff = birthday - currentDate;
         const datePassed = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
         if(datePassed === 1 || datePassed === 21 || datePassed === 31) {
